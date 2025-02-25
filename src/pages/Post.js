@@ -140,7 +140,7 @@ const Post = ({
       handleGetLikes(post.id);
     }
   }, [post, comments, deleteMsg, likeResp]);
-
+  console.log(postComments);
   return (
     <div className="mainContainer">
       {errMsg && <p>{errMsg}</p>}

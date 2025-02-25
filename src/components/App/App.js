@@ -50,7 +50,7 @@ function App() {
   const handleFileChange = (e) => {
     if (e.target.files) {
       setStatus("initial");
-      setFile(e.target.files[0]);
+      setFile(e.target.files?.[0]);
     }
   };
   const handleShowFile = () => {
@@ -108,6 +108,7 @@ function App() {
     setIsshowCreateComment(false);
     setIsshowCreatePost(!isShowCreatePost);
   };
+
   const handleCreateComment = () => {
     setIsshowCreateComment(!isShowCreateComment);
     setIsshowCreatePost(false);
@@ -119,6 +120,7 @@ function App() {
     setIsShowHome(false);
     setIsShowComment(true);
   };
+
   const handleHomeNav = () => {
     setIsShowHome(true);
     setIsShowComment(false);
@@ -130,6 +132,7 @@ function App() {
       setIsShowDelete(false);
     }
   };
+
   const handleDelete = async (path) => {
     const options = {
       headers: {
@@ -274,7 +277,7 @@ function App() {
 
           <div className="main">
             <ProfilePicture
-              user={user}
+              // user={user}
               userPhoto={userPhoto}
               file={file}
               status={status}
@@ -299,7 +302,7 @@ function App() {
                     />
                   }
                 />
-                <Route path="/createPost" element={<CreatePosts />} />
+                {/* <Route path="/createPost" element={<CreatePosts />} /> */}
                 <Route path="/createComment" element={<CreateComment />} />
                 <Route path="/createAccount" element={<CreateUsers />} />
                 <Route
