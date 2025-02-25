@@ -3,7 +3,9 @@ import axios from "axios";
 const cors = require("cors");
 
 // const API_BASE_URL = "http://localhost:3500";
-const API_BASE_URL = "http://localhost:3004";
+const API_BASE_URL =
+  " https://fullstack-jieavs-api-4ab97f74ce7f.herokuapp.com/";
+// const API_BASE_URL = "http://localhost:3004";
 //list of sites or server addresses allowed to share data with this app
 
 const allowedOrigins = [
