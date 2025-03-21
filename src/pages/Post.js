@@ -5,7 +5,8 @@ import CreateComment from "./CreateComment";
 import { useParams } from "react-router-dom";
 import { getData, postData, putData } from "../components/App/restAPI";
 import Cookies from "js-cookie";
-const API_PHOTO_URL = "http://localhost:3004/images/";
+const API_PHOTO_URL = "https://jieavs-socialconnect.netlify.app/images/";
+// const API_PHOTO_URL = "http://localhost:3004/images/";
 const Post = ({
   user,
   isShowCreateComment,

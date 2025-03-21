@@ -18,8 +18,10 @@ import {
 import Cookies from "js-cookie";
 import ProfilePicture from "../../pages/ProfilePicture.js";
 
-const API_BASE_URL = "http://localhost:3004";
-const API_PHOTO_URL = "http://localhost:3004/images/";
+const API_BASE_URL = "https://jieavs-socialconnect.netlify.app";
+const API_PHOTO_URL = "https://jieavs-socialconnect.netlify.app/images/";
+// const API_BASE_URL = "http://localhost:3004";
+// const API_PHOTO_URL = "http://localhost:3004/images/";
 
 export const deleteData = async (path, options) => {
   const response = await client.delete(`${API_BASE_URL}/${path}`, options);
@@ -193,7 +195,7 @@ function App() {
       console.log(message);
     }
   };
-
+  console.log(user);
   useEffect(() => {
     handleGetPhoto(user.id);
 

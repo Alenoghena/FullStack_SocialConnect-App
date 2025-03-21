@@ -1,6 +1,7 @@
 import { client } from "../../../api/index";
 
-const API_BASE_URL = "http://localhost:3004";
+const API_BASE_URL = "https://jieavs-socialconnect.netlify.app";
+// const API_BASE_URL = "http://localhost:3004";
 ////Logout
 export const logOutUser = async (options) => {
   return await client.get(`${API_BASE_URL}/logOut`, options);

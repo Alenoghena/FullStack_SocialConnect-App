@@ -4,7 +4,8 @@ import User from "./User";
 import Cookies from "js-cookie";
 import { MdPersonOutline } from "react-icons/md";
 
-const API_PHOTO_URL = "http://localhost:3004/images/";
+const API_PHOTO_URL = "https://jieavs-socialconnect.netlify.app/images/";
+// const API_PHOTO_URL = "http://localhost:3004/images/";
 
 const Home = ({
   user,
