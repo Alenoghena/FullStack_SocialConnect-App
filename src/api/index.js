@@ -5,12 +5,13 @@ const cors = require("cors");
 // const API_BASE_URL = "http://localhost:3500";
 // const API_BASE_URL =
 //   " https://fullstack-jieavs-api-4ab97f74ce7f.herokuapp.com/";
-const API_BASE_URL = "http://localhost:3008";
+const API_BASE_URL = "https://jieavs-socialconnect.netlify.app";
+// const API_BASE_URL = "http://localhost:3008";
 //list of sites or server addresses allowed to share data with this app
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://www.yoursite.com",
+  "https://jieavs-socialconnect.netlify.app",
   "http://127.0.0.1:5500",
 ];
 
