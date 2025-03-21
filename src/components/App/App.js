@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "../../pages/Home.js";
-import CreatePosts from "../../pages/CreatePosts.js";
 import CreateUsers from "../../pages/CreateUsers.js";
 import Post from "../../pages/Post.js";
 import Auth from "../../auth/Auth.js";

@@ -13,7 +13,7 @@ const Home = ({
   isShowCreatePost,
   handleCommentsNav,
   userPhotoLink,
-  setShowFile,
+  // setShowFile,
 }) => {
   const [posts, setPosts] = useState([]);
   const [errMsg, setErrMsg] = useState(null);
